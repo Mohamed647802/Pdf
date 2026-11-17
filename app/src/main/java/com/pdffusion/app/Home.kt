@@ -198,6 +198,7 @@ fun ToolHost(tool: Tool, onBack: () -> Unit) {
         Box(Modifier.weight(1f).fillMaxWidth()) {
             when (tool) {
                 Tool.MERGE -> MergeScreen()
+                Tool.REORDER -> ReorderScreen()
                 Tool.IMG2PDF -> ImagesScreen()
                 Tool.VIEW -> ViewerScreen()
                 else -> SingleScreen(tool)
